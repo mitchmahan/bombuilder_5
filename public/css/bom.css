@@ -1,0 +1,159 @@
+/* 
+ * BOM BUILDER CUSTOM CSS 
+ *
+ * Author: Mitch Mahan
+ * Created: 2/1/2015
+ *
+ */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.table-condensed>tbody>tr>td, .table-condensed>tbody>tr>th, .table-condensed>tfoot>tr>td, .table-condensed>tfoot>tr>th, .table-condensed>thead>tr>td {
+    padding: 0px;
+    vertical-align: middle;
+  }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* Auto Complete */
+.autocomplete-suggestions { border: 1px solid #999; background: #FFF; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 6px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { cursor: pointer; background: #F0F0F0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399FF; }
+.autocomplete-group { padding: 2px 5px; }
+.autocomplete-group strong { display: block; border-bottom: 1px solid #000; }
+#.ui-autocomplete-category {
+  #  font-style: underline;
+#}
+
+/* Change the default Bootstrap TR color */
+.table-hover tbody tr:hover td {
+  background-color: #DDE0FF;
+  cursor: pointer;
+}
+
+/* Change the inline editable content */
+.editable-container.editable-inline,
+.editable-container.editable-inline .control-group.form-group,
+.editable-container.editable-inline .control-group.form-group .editable-input,
+.editable-container.editable-inline .control-group.form-group .editable-input textarea,
+.editable-container.editable-inline .control-group.form-group .editable-input select,
+.editable-container.editable-inline .control-group.form-group .editable-input input:not([type=radio]):not([type=checkbox]):not([type=submit])
+{
+  width: 100%;
+}
+
+/* Clear placeholder values on input */
+input:focus::-webkit-input-placeholder{
+  color: transparent!important;
+}
+input:focus::-moz-placeholder{
+  color: transparent!important;
+}
+input:focus:-moz-placeholder{
+  color: transparent!important;
+}
+
+/* 
+ *
+ * INDEX PAGE CSS 
+ *
+ */
+/* CHANGE THE HEIGHT OF THE "SEARCH" DROPDOWN */
+.ui-autocomplete { 
+  height: 300px;
+  overflow-y: scroll; 
+  overflow-x: hidden;
+}
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  -webkit-border-radius: 0 6px 6px 6px;
+  -moz-border-radius: 0 6px 6px;
+  border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #ccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+  border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+  float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  -webkit-border-radius: 6px 0 6px 6px;
+  -moz-border-radius: 6px 0 6px 6px;
+  border-radius: 6px 0 6px 6px;
+}
+
+a.list-group-item:hover {
+  pointer: cursor;
+  background-color: #DDD;
+}
+
+/* MAKE THE SEARCH INPUT LARGER */
+.search {
+  min-width: 300px;
+  width: 100%;
+}
+
+.btn-sm:hover {
+  cursor: pointer;
+}
+
+/*
+ * BOM PAGE CSS 
+ *
+ */
+
+/* COLOR THE PARTS TABLE TRs */
+.part-row {
+  font-weight: bold;
+}
+
+.total {
+  border-top: solid 2px;
+  font-weight: bold;
+}
